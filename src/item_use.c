@@ -981,7 +981,7 @@ void ItemUseInBattle_PokeBall(u8 taskId)
         return;
     }
     #endif
-    if (IsPlayerPartyAndPokemonStorageFull() == FALSE) // have room for mon?
+    switch(CanThrowBall())
     {
     case 0: // usable
     default:
