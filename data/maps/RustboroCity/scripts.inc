@@ -833,24 +833,16 @@ RustboroCity_EventScript_RivalEncounter::
 	end
 
 RustboroCity_EventScript_MayEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_MayBrineyHint
-	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_MayAskToBattle
-	setflag FLAG_MET_RIVAL_RUSTBORO
-	msgbox RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
-	closemessage
-	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
-	delay 30
-	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	setvar VAR_RUSTBORO_CITY_STATE, 8
-	setvar VAR_ROUTE104_STATE, 2
-	setvar VAR_0x8008, 0
-	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox RustboroCity_EventScript_MayEncounter_Text_0
+	msgbox RustboroCity_EventScript_MayEncounter_Text_1
+	msgbox RustboroCity_EventScript_MayEncounter_Text_2
+	msgbox RustboroCity_EventScript_MayEncounter_Text_3
+	msgbox RustboroCity_EventScript_MayEncounter_Text_4
+	applymovement LOCALID_RIVAL, RustboroCity_Movement_RivalWalkAway
+	waitmovement 0
+	removeobject LOCALID_RIVAL
+	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setvar VAR_RIVAL_STATE, 1
 	call RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
@@ -901,23 +893,16 @@ RustboroCity_EventScript_BattleMayMudkip::
 	end
 
 RustboroCity_EventScript_BrendanEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanBrineyHint
-	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanAskToBattle
-	setflag FLAG_MET_RIVAL_RUSTBORO
-	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
-	closemessage
-	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
-	delay 30
-	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	setvar VAR_RUSTBORO_CITY_STATE, 8
-	setvar VAR_ROUTE104_STATE, 2
-	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+	msgbox RustboroCity_EventScript_MayEncounter_Text_0
+	msgbox RustboroCity_EventScript_BrendanEncounter_Text_0
+	msgbox RustboroCity_EventScript_BrendanEncounter_Text_1
+	msgbox RustboroCity_EventScript_BrendanEncounter_Text_2
+	msgbox RustboroCity_EventScript_BrendanEncounter_Text_3
+	applymovement LOCALID_RIVAL, RustboroCity_Movement_RivalWalkAway
+	waitmovement 0
+	removeobject LOCALID_RIVAL
+	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setvar VAR_RIVAL_STATE, 1
 	call RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
@@ -1015,6 +1000,15 @@ RustboroCity_Movement_RivalApproachPlayer7:
 	walk_right
 	walk_right
 	walk_down
+	step_end
+
+RustboroCity_Movement_RivalWalkAway:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
 	step_end
 
 RustboroCity_EventScript_Boy1::
@@ -1133,6 +1127,41 @@ RustboroCity_Text_YoureLoadedWithItems:
 RustboroCity_Text_PleaseComeWithMe:
 	.string "Excuse me, please!\n"
 	.string "Please come with me!$"
+
+RustboroCity_EventScript_MayEncounter_Text_0:
+	.string "{PLAYER}!$"
+
+RustboroCity_EventScript_MayEncounter_Text_1:
+	.string "So you made it here to Rustboro too!$"
+
+RustboroCity_EventScript_MayEncounter_Text_2:
+	.string "It's really big here, isn't it?\n"
+	.string "Littleroot can't even compare.$"
+
+RustboroCity_EventScript_MayEncounter_Text_3:
+	.string "Oh, and {PLAYER}, have you heard?\n"
+	.string "There's a Pokémon Gym here, too!$"
+
+RustboroCity_EventScript_MayEncounter_Text_4:
+	.string "Once I catch a couple more Pokémon, I'll\n"
+	.string "be sure to take it on with my team!\l"
+	.string "See you later!$"
+
+RustboroCity_EventScript_BrendanEncounter_Text_0:
+	.string "So you made it here to Rustboro too.$"
+
+RustboroCity_EventScript_BrendanEncounter_Text_1:
+	.string "It's a real city, huh?\n"
+	.string "Nothing like Littleroot.$"
+
+RustboroCity_EventScript_BrendanEncounter_Text_2:
+	.string "Oh, did you know?\n"
+	.string "There's a Pokémon Gym here, too.$"
+
+RustboroCity_EventScript_BrendanEncounter_Text_3:
+	.string "Soon as I gather a few more Pokémon, I'll\n"
+	.string "be trying my team against it!\l"
+	.string "See ya!$"
 
 RustboroCity_Text_MayHiLetsRegister:
 	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
@@ -1297,3 +1326,4 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+

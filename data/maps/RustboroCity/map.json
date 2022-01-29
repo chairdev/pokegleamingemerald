@@ -448,8 +448,8 @@
       "x": 12,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger0"
     },
     {
@@ -457,8 +457,8 @@
       "x": 13,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger1"
     },
     {
@@ -466,8 +466,8 @@
       "x": 14,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger2"
     },
     {
@@ -475,8 +475,8 @@
       "x": 15,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger3"
     },
     {
@@ -484,8 +484,8 @@
       "x": 16,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger4"
     },
     {
@@ -493,8 +493,8 @@
       "x": 17,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger5"
     },
     {
@@ -502,8 +502,8 @@
       "x": 18,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger6"
     },
     {
@@ -511,8 +511,8 @@
       "x": 19,
       "y": 53,
       "elevation": 3,
-      "var": "VAR_RUSTBORO_CITY_STATE",
-      "var_value": "7",
+      "var": "VAR_RIVAL_STATE",
+      "var_value": "0",
       "script": "RustboroCity_EventScript_RivalTrigger7"
     }
   ],
