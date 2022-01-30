@@ -92,6 +92,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
 	giveitem ITEM_FRIEND_BALL
+	giveitem ITEM_EXP_SHARE
 	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
 	goto PetalburgWoods_EventScript_DevonResearcherFinish
@@ -368,10 +369,17 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you a Friend Ball as\n"
+	.string "I know, I'll give you these as\n"
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
+	.string "The Exp. Share is a super high-tech\n"
+	.string "device.\l"
+	.string "I had to strain every fiber of my brain\l"
+	.string "and body to develop this device! Turn\l"
+	.string "the switch on, and battle experience\l"
+	.string "will be shared by all party Pokémon!\n"
+	.string "Please give it a try!\p"
 	.string "…Ah! Didn't that Team Aqua thug say\n"
 	.string "they were after something in\l"
 	.string "Rustboro, too?$"
