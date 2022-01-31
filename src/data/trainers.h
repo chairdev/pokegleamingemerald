@@ -8289,7 +8289,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_BRENDAN,
@@ -8298,12 +8298,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_BrendanRustboroTreecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRustboroTreecko},
+        .party = {.ItemCustomMoves = sParty_BrendanRustboroTreecko},
     },
 
     [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_BRENDAN,
@@ -8312,7 +8312,7 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_BrendanRustboroMudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRustboroMudkip},
+        .party = {.ItemCustomMoves = sParty_BrendanRustboroMudkip},
     },
 
     [TRAINER_PAXTON] =
@@ -8387,7 +8387,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_BRENDAN,
@@ -8396,12 +8396,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_BrendanRustboroTorchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRustboroTorchic},
+        .party = {.ItemCustomMoves = sParty_BrendanRustboroTorchic},
     },
 
     [TRAINER_MAY_RUSTBORO_MUDKIP] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_MAY,
@@ -8410,7 +8410,7 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = ARRAY_COUNT(sParty_MayRustboroMudkip),
-        .party = {.NoItemDefaultMoves = sParty_MayRustboroMudkip},
+        .party = {.ItemCustomMoves = sParty_MayRustboroMudkip},
     },
 
     [TRAINER_MAXIE_MAGMA_HIDEOUT] =
@@ -10753,7 +10753,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MAY_RUSTBORO_TREECKO] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_MAY,
@@ -10762,12 +10762,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_MayRustboroTreecko),
-        .party = {.NoItemDefaultMoves = sParty_MayRustboroTreecko},
+        .party = {.ItemCustomMoves = sParty_MayRustboroTreecko},
     },
 
     [TRAINER_MAY_RUSTBORO_TORCHIC] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_MAY,
@@ -10776,7 +10776,7 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_MayRustboroTorchic),
-        .party = {.NoItemDefaultMoves = sParty_MayRustboroTorchic},
+        .party = {.ItemCustomMoves = sParty_MayRustboroTorchic},
     },
 
     [TRAINER_ROXANNE_2] =

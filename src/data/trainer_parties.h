@@ -3377,7 +3377,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .lvl = 12,  
     .species = SPECIES_LILEEP,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_WRAP, MOVE_ABSORB, MOVE_STEALTH_ROCK, MOVE_NONE}
+    .moves = {MOVE_WRAP, MOVE_MEGA_DRAIN, MOVE_STEALTH_ROCK, MOVE_NONE}
     },
     {
     .iv = 200,
@@ -7845,29 +7845,65 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Macey[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRustboroTreecko[] = {
+static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTreecko[] = {
     {
     .iv = 25,
     .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_DRILBUR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_RAPID_SPIN, MOVE_CUT, MOVE_HONE_CLAWS, MOVE_STEALTH_ROCK}
     },
     {
     .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .lvl = 14,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COVET, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK}
+    },
+    {
+    .iv = 25,
+    .lvl = 17,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 75,
+    .lvl = 18,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_SCRATCH, MOVE_QUICK_ATTACK, MOVE_FLAME_CHARGE, MOVE_DOUBLE_KICK}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRustboroMudkip[] = {
+static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroMudkip[] = {
     {
     .iv = 25,
     .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .species = SPECIES_DRILBUR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_RAPID_SPIN, MOVE_CUT, MOVE_HONE_CLAWS, MOVE_STEALTH_ROCK}
     },
     {
     .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .lvl = 14,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COVET, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK}
+    },
+    {
+    .iv = 25,
+    .lvl = 17,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 75,
+    .lvl = 18,
+    .species = SPECIES_GROVYLE,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_MEGA_DRAIN, MOVE_DETECT}
     }
 };
 
@@ -7941,29 +7977,65 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jonathan[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRustboroTorchic[] = {
+static const struct TrainerMonItemCustomMoves sParty_BrendanRustboroTorchic[] = {
     {
     .iv = 25,
     .lvl = 13,
-    .species = SPECIES_SLUGMA,
+    .species = SPECIES_DRILBUR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_RAPID_SPIN, MOVE_CUT, MOVE_HONE_CLAWS, MOVE_STEALTH_ROCK}
     },
     {
     .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .lvl = 14,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COVET, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK}
+    },
+    {
+    .iv = 25,
+    .lvl = 17,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 75,
+    .lvl = 18,
+    .species = SPECIES_MARSHTOMP,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_TACKLE, MOVE_ROCK_SMASH, MOVE_WATER_PULSE, MOVE_MUD_SHOT}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroMudkip[] = {
+static const struct TrainerMonItemCustomMoves sParty_MayRustboroMudkip[] = {
     {
     .iv = 25,
     .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .species = SPECIES_DRILBUR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_RAPID_SPIN, MOVE_CUT, MOVE_HONE_CLAWS, MOVE_STEALTH_ROCK}
     },
     {
     .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .lvl = 14,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COVET, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK}
+    },
+    {
+    .iv = 25,
+    .lvl = 17,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 75,
+    .lvl = 18,
+    .species = SPECIES_GROVYLE,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_MEGA_DRAIN, MOVE_DETECT}
     }
 };
 
@@ -10284,29 +10356,65 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroTreecko[] = {
+static const struct TrainerMonItemCustomMoves sParty_MayRustboroTreecko[] = {
     {
     .iv = 25,
     .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_DRILBUR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_RAPID_SPIN, MOVE_CUT, MOVE_HONE_CLAWS, MOVE_STEALTH_ROCK}
     },
     {
     .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .lvl = 14,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COVET, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK}
+    },
+    {
+    .iv = 25,
+    .lvl = 17,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 75,
+    .lvl = 18,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_SCRATCH, MOVE_QUICK_ATTACK, MOVE_FLAME_CHARGE, MOVE_DOUBLE_KICK}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroTorchic[] = {
+static const struct TrainerMonItemCustomMoves sParty_MayRustboroTorchic[] = {
     {
     .iv = 25,
     .lvl = 13,
-    .species = SPECIES_TORKOAL,
+    .species = SPECIES_DRILBUR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_RAPID_SPIN, MOVE_CUT, MOVE_HONE_CLAWS, MOVE_STEALTH_ROCK}
     },
     {
     .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .lvl = 14,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COVET, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK}
+    },
+    {
+    .iv = 25,
+    .lvl = 17,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 75,
+    .lvl = 18,
+    .species = SPECIES_MARSHTOMP,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_TACKLE, MOVE_ROCK_SMASH, MOVE_WATER_PULSE, MOVE_MUD_SHOT}
     }
 };
 
