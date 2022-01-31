@@ -600,7 +600,7 @@ RustboroCity_EventScript_ReturnGoods::
 	call_if_eq VAR_TEMP_1, 3, RustboroCity_EventScript_EmployeeApproachPlayerDown2
 	call_if_eq VAR_TEMP_1, 4, RustboroCity_EventScript_EmployeeFacePlayerRight
 	msgbox RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT
-	giveitem ITEM_GREAT_BALL
+	giveitem ITEM_LOVE_BALL
 	call_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull
 	msgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
 	closemessage
@@ -1100,12 +1100,12 @@ RustboroCity_Text_WaitDontTakeMyGoods:
 
 RustboroCity_Text_HelpMeIWasRobbed:
 	.string "Oh, it's you!\p"
-	.string "You're that fantastic TRAINER who\n"
-	.string "helped me in PETALBURG WOODS!\p"
-	.string "Help me! I was robbed by TEAM AQUA!\n"
-	.string "I have to get the DEVON GOODS back!\p"
+	.string "You're that fantastic Trainer who\n"
+	.string "helped me in Petalburg Woods!\p"
+	.string "Help me! I was robbed by Team Aqua!\n"
+	.string "I have to get the Devon Parts back!\p"
 	.string "If I don't…\n"
-	.string "I'm going to be in serious trouble.$"
+	.string "I'm going to be in serious trouble…$"
 
 RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
 	.string "That shady character, I think he took\n"
@@ -1113,26 +1113,26 @@ RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
 
 RustboroCity_Text_YouGotItThankYou:
 	.string "Oh! How did it go?\n"
-	.string "The DEVON GOODS?\p"
+	.string "Did you get my Devon Parts?\p"
 	.string "You did!\n"
 	.string "You got them back!\p"
-	.string "You really are a great TRAINER!\p"
+	.string "You really are a great Trainer!\p"
 	.string "I know! As my thanks, I'll give you\n"
-	.string "another GREAT BALL!$"
+	.string "a Love Ball!$"
 
 RustboroCity_Text_YoureLoadedWithItems:
 	.string "You're loaded with items.\n"
-	.string "I can't give you this GREAT BALL.$"
+	.string "I can't give you this Love Ball.$"
 
 RustboroCity_Text_PleaseComeWithMe:
-	.string "Excuse me, please!\n"
+	.string "Oh, yes!\n"
 	.string "Please come with me!$"
 
 RustboroCity_EventScript_MayEncounter_Text_0:
 	.string "{PLAYER}!$"
 
 RustboroCity_EventScript_MayEncounter_Text_1:
-	.string "So you made it here to Rustboro too!$"
+	.string "So you made it here to Rustboro, too!$"
 
 RustboroCity_EventScript_MayEncounter_Text_2:
 	.string "It's really big here, isn't it?\n"
@@ -1148,7 +1148,7 @@ RustboroCity_EventScript_MayEncounter_Text_4:
 	.string "See you later!$"
 
 RustboroCity_EventScript_BrendanEncounter_Text_0:
-	.string "So you made it here to Rustboro too.$"
+	.string "So you made it here to Rustboro, too.$"
 
 RustboroCity_EventScript_BrendanEncounter_Text_1:
 	.string "It's a real city, huh?\n"
