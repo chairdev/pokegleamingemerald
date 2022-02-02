@@ -3391,24 +3391,24 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
     .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MACHOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
+    .lvl = 14,
+    .species = SPECIES_BRELOOM,
+    .heldItem = ITEM_COBA_BERRY,
+    .moves = {MOVE_HEADBUTT, MOVE_POISON_POWDER, MOVE_COUNTER, MOVE_POWER_UP_PUNCH}
     },
     {
     .iv = 100,
-    .lvl = 16,
+    .lvl = 17,
     .species = SPECIES_MEDITITE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
+    .moves = {MOVE_CONFUSION, MOVE_DETECT, MOVE_FORCE_PALM, MOVE_POWER_UP_PUNCH}
     },
     {
     .iv = 200,
     .lvl = 19,
     .species = SPECIES_MAKUHITA,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_FAKE_OUT, MOVE_KNOCK_OFF, MOVE_POWER_UP_PUNCH}
     }
 };
 
